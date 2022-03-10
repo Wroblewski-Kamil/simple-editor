@@ -1,12 +1,14 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -15,28 +17,24 @@ body {
   background: $blue;
 }
 
-
-.header{
+.header {
   text-align: center;
-  margin-top:180px ;
+  margin-top: 180px;
   margin-bottom: 12px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-size: 64px;
   color: $yellow;
-  
 }
 
-.mainDiv{
-  display:flex;
+.mainDiv {
+  display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
-  
-
 }
 
-.textArea{
+.textArea {
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 30px;
@@ -45,50 +43,49 @@ body {
   // text-align: center;
   padding: 20px 5px;
   font-size: 18px;
-  outline:none;
-  resize:none;
-  overflow-y:scroll;
-  
+  outline: none;
+  resize: none;
+  overflow-y: scroll;
 }
 
-.buttons{
+.buttons {
   margin-top: 12px;
-  display:flex;
-  width:700px;
+  display: flex;
+  width: 700px;
   justify-content: flex-end;
 }
 
-.button{
+.button {
+  transition: 0.1s 0s;
   border: none;
   width: 120px;
   height: 40px;
-  border-radius:20px ;
-  font-family: 'Righteous', cursive;
+  border-radius: 20px;
+  font-family: "Righteous", cursive;
   font-size: 30px;
   margin-left: 20px;
   background-color: $yellow;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.76), inset -2px -2px 2px rgba(0, 0, 0, 0.76);
+  &:active {
+    box-shadow: inset -2px -2px 2px rgba(255, 255, 255, 0.76), inset 2px 2px 2px rgba(0, 0, 0, 0.76);
+  }
 }
 
-.buttonCLR{
+.buttonCLR {
+  transition: 0.1s 0s;
   margin-right: auto;
   width: 140px;
   height: 40px;
-  border-radius:20px ;
-  font-family: 'Righteous', cursive;
+  border-radius: 20px;
+  font-family: "Righteous", cursive;
   font-size: 30px;
-  border:none;
+  border: none;
   background-color: $yellow;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.76), inset -2px -2px 2px rgba(0, 0, 0, 0.76);
-
+  &:active {
+    box-shadow: inset -2px -2px 2px rgba(255, 255, 255, 0.76), inset 2px 2px 2px rgba(0, 0, 0, 0.76);
+  }
 }
-
-.button__onClick{
-  box-shadow: none;
-  box-shadow: inset -2px -2px 2px rgba(255, 255, 255, 0.76), inset 2px 2px 2px rgba(0, 0, 0, 0.76);
-}
-
-
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -97,7 +94,7 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f100;
-  background-size: 100% 35px; 
+  background-size: 100% 35px;
 }
 
 /* Handle */
@@ -111,5 +108,11 @@ body {
   background: rgba(112, 164, 180, 0.616);
 }
 
-::-webkit-scrollbar-button:end{height:20px; width:50%;}
-::-webkit-scrollbar-button:start{height: 20px; width:50%;}
+::-webkit-scrollbar-button:end {
+  height: 20px;
+  width: 50%;
+}
+::-webkit-scrollbar-button:start {
+  height: 20px;
+  width: 50%;
+}

@@ -20,3 +20,23 @@ if ('serviceWorker' in navigator) {
 console.log(`Hello world!`);
 
 
+
+const input = document.querySelector('.buttonCLR--JS');
+const textarea = document.querySelector('.textArea--JS');
+
+input.addEventListener('click', function () {
+  textarea.value = '';
+});
+
+
+const loadBTN = document.querySelector('.buttonLoad--JS');
+const saveBTN = document.querySelector('.buttonSave--JS');
+
+loadBTN.addEventListener('click', function(){
+  textarea.value = localStorage.getItem('text');
+});
+
+saveBTN.addEventListener('click', function(){
+
+  localStorage.setItem('text', textarea.value);
+});
