@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 html {
   box-sizing: border-box;
@@ -12,5 +12,106 @@ html {
 
 body {
   color: $yellow;
-  background: $violet;
+  background: $blue;
 }
+
+
+.header{
+  text-align: center;
+  margin-top:180px ;
+  margin-bottom: 12px;
+  font-family: 'Righteous', cursive;
+  font-size: 64px;
+  color: $yellow;
+  
+}
+
+.mainDiv{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.textArea{
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 700px;
+  height: 500px;
+  // text-align: center;
+  padding: 20px 5px;
+  font-size: 18px;
+  outline:none;
+  resize:none;
+  overflow-y:scroll;
+  
+}
+
+.buttons{
+  margin-top: 12px;
+  display:flex;
+  width:700px;
+  justify-content: flex-end;
+}
+
+.button{
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius:20px ;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  margin-left: 20px;
+  background-color: $yellow;
+  // border: 1px solid #000000;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.76), inset -2px -2px 2px rgba(0, 0, 0, 0.76);
+}
+
+.buttonCLR{
+  margin-right: auto;
+  width: 140px;
+  height: 40px;
+  border-radius:20px ;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  border:none;
+  background-color: $yellow;
+  // border: 1px solid #000000;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.76), inset -2px -2px 2px rgba(0, 0, 0, 0.76);
+}
+
+.button__onClick{
+  box-shadow: none;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+  background-size: 100% 35px; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 164, 180);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(112, 164, 180, 0.616);
+}
+
+::-webkit-scrollbar-button:end{height:20px; width:50%;}
+::-webkit-scrollbar-button:start{height: 20px; width:50%;}
